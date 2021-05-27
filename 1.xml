@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="news.css"?>
+
+<news 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:noNamespaceSchemaLocation="schema_sample.xsd">
+
+            <category>날씨</category>
+            <topic>스포츠</topic>
+            <header>
+                <title>'신영석 15점' 한국, 亞선수권 8강 첫 경기서 대만 완파(종합)</title>
+                <publishedDate>
+                    <date>
+                      <year>2019</year>
+                      <month>09</month>
+                      <day>17</day> 
+                    </date>  
+                    <time>19:43:00</time>
+                </publishedDate>
+                <reporter>
+                    <gender>male</gender>
+                    <name>하남직 기자</name>
+                     <email emailaddress="jiks79@yna.co.kr">jiks79@yna.co.kr</email>
+                </reporter>
+            </header>
+
+          <body>
+            <sub_title>나경복 13점-정지석 12점으로 3-0 완승 앞장..18일 한일전</sub_title>
+            <pic file="https://t1.daumcdn.net/news/201909/17/yonhap/20190917194319538ntdv.jpg"  title="한국남자배구 대표팀 센터 신영석(왼쪽) [아시아배구연맹 제공]"  url=""/>
+            <content>
+                    <p>
+                        (서울=연합뉴스) 하남직 기자 = 한국 남자배구가 아시아선수권대회 8강 라운드 첫 경기
+                        에서 대만을 완파하며 4강 진출 가능성을 키웠다.          
+                    </p>
+                    <p>
+                        임도헌 감독이 이끄는 한국 대표팀은 17일 이란 테헤란 아자디 스포츠콤플렉스에서 열린
+                         제20회 아시아남자배구선수권대회 8강 라운드 F조 1차전에서 대만에 세트 스코어 3-
+                         0(25-21 25-19 26-24)으로 승리했다.          
+                    </p>
+                    <p>
+                        한국은 대만과의 역대 전적에서 27승 2패의 절대 우위를 유지했다.
+                    </p>
+                    <p>
+                        D조 예선에서 파키스탄, 쿠웨이트, 인도네시아를 모두 3-0으로 꺾고 조 1위를 차지한 한
+                        국은 B조 1위 일본, 2위 대만, D조 2위 파키스탄과 함께 8강 라운드 F조에 묶였다.
+                    </p>
+                    <p>
+                        예선에서 이미 격돌한 파키스탄을 제외한 대만, 일본과 맞붙는 한국은 만만치 않은 상대
+                         대만을 누르고 기분 좋게 8강 라운드를 시작했다.
+                        대표팀 주장인 센터 신영석(현대캐피탈)이 양 팀 최다인 15점을 뽑으며 팀 승리를 이끌었다.
+                    </p>
+                    <p>
+                        또 '좌우 쌍포'로 나선 정지석(대한항공)과 나경복(우리카드)도 12점과 13점을 사냥하며
+                         무실세트 승리에 힘을 보탰다.          
+                    </p>
+                    <p>
+                        주전 세터 황택의(KB손해보험)가 세 세트를 모두 뛰며 경기를 조율했고, 레프트 허수봉
+                        (국군체육부대)도 9점을 뽑으며 뒤를 받쳤다.          
+                    </p>
+                    <p>
+                           한국은 특히 신영석, 최민호(현대캐피탈), 김재휘(국군체육부대)가 막강 센터진을 구축해
+                          팀 블로킹 득점에서 15-4로 대만을 압도했다.
+                          F조에서 1∼4위를 정하면, 8강 라운드 E조 1∼4위와 크로스 토너먼트로 8강전을 펼친다.
+                          E조는 이란, 호주, 중국, 인도로 구성했다.       
+                    </p>
+                    <p>
+                        8강에서 이란, 호주, 중국 등 강팀과 맞붙지 않으려면 F조 1위를 차지하는 게 유리하다.
+                        이미 이번 대회 8위까지 주는 도쿄올림픽 대륙별 예선 티켓을 손에 넣은 한국은 내심 16년 만의 아시아선수권 정상 탈환도 노린다.
+                        한국은 18일 일본과 맞붙는다. 일본전에서 승리하면 F조 1위가 확정된다.          
+            </p>      
+            </content>
+            <copy-write></copy-write>
+          </body>
+          <footer>
+              <related_news hyperlink="http://yna.kr/AKR20190918077200005?input=feed_daum"></related_news>
+              <comment></comment>
+          </footer>
+
+</news>

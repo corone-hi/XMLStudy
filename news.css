@@ -1,0 +1,55 @@
+news,title, publishedDate,reporter, sub_title, pic, content{display:block;}
+
+category{font-size: 60px;
+		 margin-left: 30px;
+		 border-bottom: 1px solid gray;}
+
+topic{font-size:40px;
+		text-align:center;
+		color:#ffffff;
+		background-color:#326fa8;
+		display:block;
+		margin-top:20px;}
+
+header,body,footer{position:relative;
+		top: 80px;}
+		
+
+
+
+
+title{font-size: 40px;
+		margin-left: 30px;
+		margin-bottom: 20px;}
+
+publishedDate{margin-left:30px;}
+
+reporter{font-weight: 800;
+			margin-left: 30px;
+			border-bottom: 1px solid black;
+			width: 1100px;}
+
+gender{display: none;}
+
+
+sub_title{
+		width: 900px;
+		font-size:30px;
+		margin-left: 100px;
+		margin-top: 50px; }
+
+pic{background-image:();}
+
+content{width:900px;
+		margin: 80px 100px;}
+
+content p {display: block;
+			font-size: 20px;
+			line-height: 50px;
+			margin-top: 40px;
+			}
+
+
+related_news{margin-left:100px;
+			font-size:20px;
+			font-weight: 800;}

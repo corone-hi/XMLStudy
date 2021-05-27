@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified">
+  
+  <xs:element name="news">
+    <xs:complexType>
+      <xs:sequence>
+           <xs:element name="category" type="xs:string"/>
+           <xs:element name="topic" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="header" type="headerType" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="body" type="bodyType" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="footer" type="footerType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+    
+    
+    <xs:complexType name="headerType">
+      <xs:sequence>
+        <xs:element name="title" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element name="publishedDate" type="publishedDateType" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element name="reporter" type="reporterType" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="publishedDateType">
+      <xs:sequence>
+        <xs:element name="date" type="dateType" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element name="time" type="timeType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  
+  
+     <xs:simpleType name="dateType">
+      <xs:restriction base="xs:integer">
+        <xs:element name="year" type="xs:g Year"/>
+        <xs:element name="month" type="xs:gMonth"/>
+        <xs:element name="day" type="xs:gDay"/>
+      </xs:restriction>
+    </xs:simpleType>    
+
+    
+    <xs:simpleType name="timeType">
+      <xs:restriction base="xs:integer">
+       <xs:element type="xs:time"/>
+      </xs:restriction>
+    </xs:simpleType>
+
+    
+    <xs:complexType name="reporterType">
+      <xs:sequence>
+        <xs:element name="gender" type="genderType" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element name="email" type="emailType" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="genderType">
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:element name="female" type="xs:string"/>
+        <xs:element name="male" type="xs:string"/>
+      </xs:choice>
+    </xs:complexType>
+    
+    <xs:complexType name="emailType">
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="email_address" type="xs:anyURI" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+    
+    
+    <xs:complexType name="bodyType">
+      <xs:sequence>
+        <xs:element name="sub_title" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="pic" type="picType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="content" type="contentType" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element name="copy-write" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="picType">
+      <xs:attribute name="file" type="xs:anyURI" use="required"/>
+      <xs:attribute name="title" type="xs:string" use="required"/>
+      <xs:attribute name="url" type="xs:string" use="optional"/>
+    </xs:complexType>
+    
+        
+    <xs:complexType name="contentType">
+      <xs:sequence>
+        <xs:element name="p" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="footerType">
+      <xs:sequence>
+        <xs:element name="related_news" type="relatedType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="keyword" type="keywordType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="relatedType">
+      <xs:attribute name="hyperlink" type="xs:anyURI" use="required"/>
+  </xs:complexType>
+    
+    <xs:simpleType name="keywordType">
+      <xs:list itemType="string"/>
+    </xs:simpleType>
+    
+
+</xs:schema>
